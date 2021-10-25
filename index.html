@@ -1,0 +1,112 @@
+<!-- Assim que coloca comentarios 
+
+
+HTML
+
+HyperText - Hiper texto
+|_ textos com links e direcionamentos
+
+Markup - Marcações 
+|_ tags
+
+Language - linguagem
+|_ é uma linguagem porque tem sintaxe, mas não é uma linguagem de programação
+-->
+
+
+<!-- Incio padrao de todo codigo em html -->
+<!DOCTYPE html>
+
+
+<html>
+
+<!-- head é a parte em que damos instruçoes para o navegador, dando um titulo a pagina ou indicando as personalizaçoes que desejamos-->
+  <head>
+    <title> Pedro Ferreira - DoWhile</title>
+
+    <!-- Serve para personalizar textos, imagens e afins.
+    
+    cascating stylesheet -> Folha de estilo em cascata, o ultimo elemento é o mais importante e é o que ficara visivel para o cliente.
+  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- body é a parte visivel do codigo, que o cliente verá
+  <h1> -> tag de texto, maior e é o que da mais destaque
+  <a href> -> tag para adicionar links
+  -->
+  <body>
+
+    <main>      
+      <div class="container">
+
+        <div class="avatar">
+
+          <span>
+            <img src="images/build.svg" 
+            alt="Selo Rocketseat" />
+          </span>
+
+          <img src="images/eu.jpg"
+           alt="Foto pessoal" 
+           id="userImage"/>
+        </div>
+
+        <h1 id="userName"> Pedro Ferreira</h1>
+        <a id="userLink" href="https://github.com/pedro8777"
+        target="_blank">
+         <img src="images/github.svg" 
+          alt="ícone do github" /> <span id="userLogin" >pedro8777</span> </a>
+
+         <p id="userBio">Ainda não sei o que colocar...</p>
+
+         <ul id="socialLinks">
+           <li class="youtube">
+             <a 
+             href="https://www.youtube.com/channel/UCdns_t4_6PuLf9nhShrdHCg"
+             target="_blank"
+             >
+            <img src="images/youtube.svg"
+              alt="ícone do Youtube"  
+              />
+            </a>
+           </li>
+
+           <li class="instagram">
+             <a href="https://instagram.com/pedrof694?utm_medium=copy_link"
+             target="_blank">
+               <img src="images/instragram.svg"
+                alt="ícone do instragram" 
+                target="_blank" 
+                />
+             </a>
+           </li>
+
+           <li class="twitter">
+             <a href="https://twitter.com/pedrof496"
+             target="_blank">
+               <img src="images/twitter.svg" 
+               alt="ícone do Twitter"  
+               />
+             </a>
+           </li>
+
+           <li class="linkedin">
+             <a href="www.linkedin.com/in/joão-pedro-419b0a205"
+             target="_blank">
+               <img src="images/Group 6422.png"
+               alt="ícone do Linkdin"
+               />
+             </a>
+           </li>
+
+         </ul>
+      </div>
+    </main>
+    <script src="main.js"> </script>
+  </body>
+</html>
